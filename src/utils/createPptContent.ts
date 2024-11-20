@@ -18,7 +18,7 @@ export default async function createPptContent(content: string, numberOfSidles: 
   const messages: ChatCompletionMessageParam[] = [
     {
       role: 'system',
-      content: `Create a power point presentation with ${numberOfSidles} from the information I give you`,
+      content: `Create a power point presentation with strictly ${numberOfSidles} number of slides, from the information I give you. It is upto you to create and design it to be very interesting, dont use too much paragraph slides`,
     },
     {
       role: 'user',
